@@ -14,6 +14,9 @@ public class TargetController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.transform.position = Target.position;
+        if (Target)
+        {
+            this.transform.position = Target.position;
+        }       
     }
 }
